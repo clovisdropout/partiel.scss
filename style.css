@@ -24,7 +24,14 @@ nav {
   display: flex;
   justify-content: center;
 }
-nav li {
+nav ul {
+  font-size: 1.5em;
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
   color: #d3d3d3;
   opacity: 23%;
   display: block;
@@ -32,19 +39,12 @@ nav li {
   text-decoration: none;
   text-align: center;
 }
-nav li .b-nav {
+nav ul .b-nav {
   background: none;
-  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #ffffff;
-  border: block 1px #ffffff;
-  padding: 10px;
-}
-nav ul {
-  font-size: 1.5em;
-  display: inline-flex;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  border-radius: 20px;
 }
 
 .t-t {

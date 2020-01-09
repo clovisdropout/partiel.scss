@@ -12,7 +12,7 @@ html{
 .logo{
     width: 70px;
     height: 70px;
-    padding-right: 50%;;
+    padding-right: 50%;
 }
 
  .logo-t{
@@ -28,33 +28,40 @@ nav{
     display: flex;
     justify-content: center;
 
-    li{
-
-        color: $text;
-        opacity: 23%;
-        display: block;
-        padding: 14px 16px;
-        text-decoration: none;
-        text-align: center;
-
-            .b-nav{
-                background: none;
-                border-radius: 10px;
-                color: #ffffff;
-                border: block 1px #ffffff;
-                padding: 10px;
-            
-            }
-
-        }
+    
 
     ul {
-    font-size: 1.5em;
+        font-size: 1.5em;
         display: inline-flex;
         list-style-type: none;
         margin: 0;
         padding: 0;
-      }
+
+
+            li{
+
+                color: $text;
+                opacity: 23%;
+                display: block;
+                padding: 14px 16px;
+                text-decoration: none;
+                text-align: center;
+
+            }
+
+        
+
+            .b-nav{
+            
+                background: none;
+                padding-left: 30px;
+                padding-right: 30px;
+                color: #ffffff;
+                border-radius: 20px;
+            
+            }
+
+    }   
 
 }
 
