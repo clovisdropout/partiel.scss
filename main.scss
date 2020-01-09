@@ -1,7 +1,521 @@
 @import "https://necolas.github.io/normalize.css/8.0.1/normalize.css";
 @import "var.scss";
 @import "mixins.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 html{
-    background-color: ;
+    background-color: $color1;
+    font-family: 'Roboto', sans-serif;
+
 }
+
+.logo{
+    width: 70px;
+    height: 70px;
+    padding-right: 50%;;
+}
+
+ .logo-t{
+     @include block();
+     font-size: 2em;
+     top: 1%;
+     left: 13%;
+ }
+
+nav{
+
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    li{
+
+        color: $text;
+        opacity: 23%;
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        text-align: center;
+
+            .b-nav{
+                background: none;
+                border-radius: 10px;
+                color: #ffffff;
+                border: block 1px #ffffff;
+                padding: 10px;
+            
+            }
+
+        }
+
+    ul {
+    font-size: 1.5em;
+        display: inline-flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+}
+
+.t-t{
+    width: 200px;
+    position: absolute;
+    left: 40%;
+    top: 15%;
+}
+
+h1{
+    @include block();
+    top: 40%;
+    left: 18%;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+p{
+    @include block();
+    top: 48%;
+    left: 18%;
+    line-height: 28px;
+    color: #ffffff;
+
+}
+
+
+    .b-first{
+        @include block();
+        top: 60%;
+        left: 18%;
+        padding: 30px;
+        background: linear-gradient(90deg, rgba(189,17,250,1) 0%, rgba(0,212,255,1) 100%);
+        border-radius: 10px;
+        border: none;
+        padding-left: 60px;
+        padding-right: 60px;
+        box-shadow: 0px 0px 30px 6px rgba(189,17,250,1);
+
+    }
+
+
+    .b-second{
+        @include block();
+
+        top: 60%;
+        left: 32%;
+        padding: 30px;
+        background: none;
+        border-radius: 10px;
+        border: solid 2px #ffffff;
+        padding-left: 60px;
+        padding-right: 60px;
+
+    }
+
+
+
+    
+    .mockup{
+        position: absolute;
+        right: -5%;
+        top: 10%;
+        width: 960px;
+
+
+    }
+
+    .t-m{
+        @include block();
+        top: 95%;
+    }
+
+   
+
+    .apple{
+        @include partners();
+        top: 150%;
+        left: 20%;
+    }
+
+    
+    .puma{
+        @include partners();
+        top: 147%;
+        left: 35%;
+        width: 150px;
+    }
+    
+    .inky{
+        @include partners();
+        top: 130%;
+        left: 38%;
+        width: 150px;
+    }
+    .microsoft{
+        @include partners();
+        top: 120%;
+        left: 20%;
+        width: 150px;
+    }
+    
+    .aws{
+        @include partners();
+        top: 132%;
+        left: 21%;
+        width: 150px;
+    }
+    
+    .disney{
+        @include partners();
+        top: 126%;
+        left: 6%;
+        width: 150px;
+    }
+    
+    .converse{
+        @include partners();
+        top: 140%;
+        left: 4%;
+        width: 150px;
+    }
+    
+    .nike{
+        @include partners();
+        top: 116%;
+        left: 35%;
+        width: 150px;
+    }
+    
+    h2{
+        @include block();
+        top: 120%;
+        right: 15%;
+        font-size: 2.5em;
+    }
+
+
+    .h2-p{
+    @include block();
+    top: 133%;
+    left: 65%;
+    line-height: 28px;
+    color: #ffffff; 
+    }
+
+
+    .c-m{
+        width: 450px;
+        position: absolute;
+        top: 150%;
+        right: -10%;
+    }
+
+
+    .info{
+        position: absolute;
+        top: 220%;
+        left: 15%;
+        color: $color4;
+        background: #4eb9609f;
+        padding: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.2em;
+    }
+
+    h3{
+        @include block();
+        position: absolute;
+        top: 221%;
+        left: 15%;
+        font-size: 2.5em;
+
+        
+    }
+    
+    .h3-p{
+        @include block();
+        position: absolute;
+        top: 233%;
+        left: 15%;
+    }
+
+    .b-third{
+        @include block();
+        top: 245%;
+        left: 15%;
+        padding: 25px;
+        background: linear-gradient(90deg, rgba(189,17,250,1) 0%, rgba(0,212,255,1) 100%);
+        border-radius: 10px;
+        border: none;
+        padding-left: 65px;
+        padding-right: 65px;
+        box-shadow: 0px 0px 30px 6px rgba(189,17,250,1);
+    }
+
+    section{
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: $color2;
+        border-radius: 15px;
+        top: 200%;
+        right: 30%;
+
+            .pencil{
+                position: absolute;
+                left: 0%;
+                top: 20%;
+                padding: 30px;
+                padding-left: 40px;
+                padding-right: 77%;
+                background-color: $color3;
+            }
+
+            h4{
+                @include block();
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                font-size: 1.5em;
+            }
+
+            .h4-p{
+                @include block();
+                position: absolute;
+                top: 55%;
+                left: 10%;
+            }
+
+
+    }
+    section{
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: $color2;
+        border-radius: 15px;
+        top: 200%;
+        right: 30%;
+
+            .pencil{
+                position: absolute;
+                left: 0%;
+                top: 20%;
+                padding: 30px;
+                padding-left: 40px;
+                padding-right: 77%;
+                background-color: $color3;
+            }
+
+            h4{
+                @include block();
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                font-size: 1.5em;
+            }
+
+            .h4-p{
+                @include block();
+                position: absolute;
+                top: 55%;
+                left: 10%;
+            }
+
+
+    }
+    section{
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: $color2;
+        border-radius: 15px;
+        top: 200%;
+        right: 30%;
+
+            .pencil{
+                position: absolute;
+                left: 0%;
+                top: 20%;
+                padding: 30px;
+                padding-left: 40px;
+                padding-right: 77%;
+                background-color: $color3;
+            }
+
+            h4{
+                @include block();
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                font-size: 1.5em;
+            }
+
+            .h4-p{
+                @include block();
+                position: absolute;
+                top: 55%;
+                left: 10%;
+            }
+
+
+    }
+
+    section{
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: $color2;
+        border-radius: 15px;
+        top: 200%;
+        right: 30%;
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+
+
+            .pencil{
+                position: absolute;
+                left: 0%;
+                top: 20%;
+                padding: 30px;
+                padding-left: 40px;
+                padding-right: 77%;
+                background-color: $color3;
+            }
+
+            h4{
+                @include block();
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                font-size: 1.5em;
+            }
+
+            .h4-p{
+                @include block();
+                position: absolute;
+                top: 55%;
+                left: 10%;
+            }
+
+
+    }
+
+    .s-2{
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: $color2;
+        border-radius: 15px;
+        top: 210%;
+        right: 8%;
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+
+
+            .pencil{
+                position: absolute;
+                left: 0%;
+                top: 20%;
+                padding: 30px;
+                padding-left: 40px;
+                padding-right: 77%;
+                background-color: $color3;
+            }
+
+            h4{
+                @include block();
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                font-size: 1.5em;
+            }
+
+            .h4-p{
+                @include block();
+                position: absolute;
+                top: 55%;
+                left: 10%;
+            }
+
+
+    }
+
+    .s-3{
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: $color2;
+        border-radius: 15px;
+        top: 250%;
+        right: 30%;
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+
+
+            .pencil{
+                position: absolute;
+                left: 0%;
+                top: 20%;
+                padding: 30px;
+                padding-left: 40px;
+                padding-right: 77%;
+                background-color: $color3;
+            }
+
+            h4{
+                @include block();
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                font-size: 1.5em;
+            }
+
+            .h4-p{
+                @include block();
+                position: absolute;
+                top: 55%;
+                left: 10%;
+            }
+
+
+    }
+
+    .s-4{
+        position: absolute;
+        width: 350px;
+        height: 450px;
+        background-color: $color2;
+        border-radius: 15px;
+        top: 260%;
+        right: 8%;
+        box-shadow: 0px 0px 25px -1px rgba(0,0,0,0.75);
+
+
+            .pencil{
+                position: absolute;
+                left: 0%;
+                top: 20%;
+                padding: 30px;
+                padding-left: 40px;
+                padding-right: 77%;
+                background-color: $color3;
+            }
+
+            h4{
+                @include block();
+                position: absolute;
+                top: 45%;
+                left: 10%;
+                font-size: 1.5em;
+            }
+
+            .h4-p{
+                @include block();
+                position: absolute;
+                top: 55%;
+                left: 10%;
+            }
+
+
+    }
+
+
